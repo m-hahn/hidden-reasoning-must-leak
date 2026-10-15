@@ -1,0 +1,205 @@
+THIRD-PARTY ATTRIBUTIONS AND MODIFICATIONS
+Lean verification for arXiv:2609.37312
+
+This notice is maintained by the faithfulness project. It supplements the
+original license texts and source-file notices; it does not replace them,
+change their terms, or imply endorsement by any upstream author. It is not
+represented as a NOTICE file issued by an upstream project.
+
+The project-specific formalization, adaptations, and integration were
+produced by GPT-6.1-Sol with input from Michael Hahn. This attribution does
+not assert authorship or ownership of the third-party material below.
+Substantial mathematical proofs were reused. "Proved locally" means that
+the included proof source is checked by Lean, not that it was all written
+independently by this project.
+
+The original project code, scripts, and accompanying documentation for this
+Lean verification are released under the MIT License in LICENSE:
+  Copyright (c) 2026 Michael Hahn and contributors
+This grant covers our own contributions, including additions/modifications
+to the extent that we hold rights in them. It does not relicense third-party
+material or remove any upstream license, copyright, attribution, or notice
+requirements. The upstream files below retain their existing licenses.
+
+The exact per-file provenance, upstream source hashes, and license locations
+are recorded in third_party_manifest.json. That inventory is authoritative
+for the copied/adapted file paths; the descriptions below explain their role.
+
+1. Samuel Schlesinger's complexitylib
+====================================
+
+Upstream: https://github.com/SamuelSchlesinger/complexitylib
+Revision: add0aca8ee0d71e68969f2cb45cf91554a50f787
+
+Original author: Samuel Schlesinger, together with the upstream contributors.
+Original source notice:
+  Copyright (c) 2026 Samuel Schlesinger. All rights reserved.
+  Authors: Samuel Schlesinger
+
+Included material:
+  Complexitylib/Algebraic/**/*.lean (22 files): algebraic/circuit semantics,
+  restrictions, normal forms, decision trees, single-formula switching,
+  canonical encodings, and the associated finite counting proofs.
+  License: MIT. The complete original copyright and permission notice is
+  preserved unchanged in Complexitylib/Algebraic/LICENSE.
+
+  Complexitylib/Cslib/Circuit/Wire.lean: circuit wiring extensions.
+  License: Apache-2.0. The complete upstream license is preserved unchanged
+  in Complexitylib/LICENSE.
+
+Additional direct adaptation outside the vendored directory:
+  TalBlockAdvice.lean adapts the binomial/exponential counting helper from
+  Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedAdvice.lean.
+  The upstream author's copyright is also displayed in the adapting file,
+  which identifies its MIT license and points to the full permission notice.
+  The adaptation permits arbitrary final-block difference strings and uses
+  a (3t)^D advice bound. It is not claimed as independently authored code.
+
+Local modifications to the vendored sources:
+  Port to the pinned Lean/mathlib 4.19.0; remove newer module/public syntax;
+  adjust renamed conditional, Fin.ofNat, list-order, and ordered-product
+  interfaces; make coercion and extensionality steps explicit; and replace
+  one private BEq/LawfulBEq indexing helper with its DecidableEq equivalent.
+  Original source copyright/author notices are retained. The per-file port
+  headers identify the changes and pinned upstream revision.
+
+Credit boundary:
+  The single-formula switching proof is upstream work, not a new proof
+  authored here. The local common-tree argument and full Tal induction build
+  on it, and do not diminish the upstream contribution. TalFamilyAdvice.lean
+  and other local modules also use these imported proofs and definitions.
+  Complexitylib.lean is a project integration/import wrapper, not a claim to
+  authorship of the imported mathematics. The original counting discussion
+  credits Paul Beame's A Switching Lemma Primer; that credit is retained.
+
+Upstream NOTICE files at this revision: none.
+
+2. CSLib
+========
+
+Upstream: https://github.com/leanprover/cslib
+Revision: 311d27ad8458b61e9b7461fc83a480e4be97aef2
+License: Apache-2.0; complete upstream text preserved unchanged in Cslib/LICENSE.
+
+We acknowledge the CSLib contributor community, in particular the authors
+of the files included here:
+
+  Cslib/Computability/Circuit/{Basic,Homomorphism,Program,Signature,Wire}.lean
+  Copyright (c) 2026 Samuel Schlesinger. All rights reserved.
+  Authors: Samuel Schlesinger
+
+  Cslib/Init.lean (adapted initialization)
+  Copyright (c) 2025 Jesse Alama. All rights reserved.
+  Authors: Jesse Alama
+
+These files supply the circuit foundations used by the vendored switching
+development. Local changes port the circuit files to Lean/mathlib 4.19.0,
+remove newer module/public syntax, and adjust compatibility details.
+Cslib/Init.lean replaces the upstream linter/grind initialization with the
+pinned Mathlib import. Jesse Alama's notice is retained even though the
+initialization imports were substantially simplified. Each modified file
+has a prominent port/adaptation notice. Cslib.lean is a local import wrapper.
+
+Upstream NOTICE files at this revision: none. The upstream contributor list
+is available at:
+https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/AUTHORS.md
+
+3. Kenny Daniel's integer-mult-bounds-lean
+========================================
+
+Upstream: https://github.com/platypii/integer-mult-bounds-lean
+Revision: 9b148a008183b1342e134af1270d3a7dafad4a9c
+Original copyright: Copyright (c) 2026 Kenny Daniel
+License: MIT; complete original copyright and permission notice preserved
+unchanged in IntegerMultBounds/LICENSE.
+
+Included material: the 49 Lean source files under IntegerMultBounds/ named
+in third_party_manifest.json. They form the dependency subtree for the
+classical Schoenhage--Strassen proofs: modular arithmetic/FFT machinery,
+recursive correctness, stream and counter routines, machine compilation,
+halting, and cost proofs. These are substantive upstream mathematical and
+machine proofs, not newly authored multiplication proofs of this project.
+
+Local modifications port the included subtree to Lean/mathlib 4.19.0:
+update renamed or differently elaborated APIs, make type/coercion and proof
+arguments explicit, and adjust tactic proofs for compatibility. Each copied
+file carries the original copyright attribution, license reference, pinned
+revision, and port notice. IntegerMultBounds.lean is a local integration
+wrapper. The local source-machine/Transformer bridges are additional work
+built on this upstream contribution, not a replacement for its attribution.
+
+Only the checked classical dependency subtree is included. The upstream
+project's different, stronger, unfinished Machine.EndToEnd target is neither
+invoked nor assumed. We make no representation that our integration was
+written or endorsed by the upstream author.
+
+Upstream NOTICE files at this revision: none.
+
+4. Lean, mathlib, and package-managed dependencies
+================================================
+
+We gratefully acknowledge the Lean developers and the many contributors to
+mathlib and its supporting libraries. Lean and these libraries provide the
+kernel, language, tactics, mathematical infrastructure, and development tools
+on which this verification depends. Their work is not covered by the
+project-specific authorship attribution.
+
+Toolchain: leanprover/lean4:v4.19.0 (see lean-toolchain).
+  Upstream: https://github.com/leanprover/lean4
+  Retain the toolchain distribution's own licenses and notices if distributing
+  any part of it. This repository does not vendor the Lean toolchain.
+
+The exact dependency URLs and revisions are locked in lake-manifest.json
+and repeated in third_party_manifest.json. They are package-managed external
+dependencies, not project-authored sources. Root licenses in the installed
+snapshots are:
+
+  mathlib          leanprover-community/mathlib4          Apache-2.0
+  plausible        leanprover-community/plausible         Apache-2.0
+  LeanSearchClient leanprover-community/LeanSearchClient  Apache-2.0
+  importGraph      leanprover-community/import-graph       Apache-2.0
+  proofwidgets     leanprover-community/ProofWidgets4      Apache-2.0
+  aesop            leanprover-community/aesop              Apache-2.0
+  Qq               leanprover-community/quote4             Apache-2.0
+  batteries        leanprover-community/batteries          Apache-2.0
+  Cli              leanprover/lean4-cli                    MIT
+                   Copyright (c) 2021 mhuisi
+
+Their original per-file contributor/copyright notices and full license
+texts are retained by the package manager under .lake/packages/. This
+directory is excluded from version control. These root-license descriptions
+do not override differently licensed nested assets or other third-party
+material in dependency distributions. If shipping a dependency cache, web
+assets, binaries, or a toolchain, also retain its applicable nested licenses
+and notices; this source-tree inventory is not a replacement for that audit.
+
+5. Redistribution and maintenance
+================================
+
+Keep the project's MIT LICENSE, this NOTICE, third_party_manifest.json,
+the four full upstream LICENSE files, and the source-file
+author/copyright/modification notices with source
+distributions containing this material. The MIT texts include the original
+permission notice and warranty/liability disclaimer. Preserve the Apache-2.0
+license and the applicable notices when distributing source or object forms.
+Do not replace upstream notices with the GPT/Michael attribution or a blanket
+project copyright. Do not present porting or kernel checking as original
+authorship of upstream proofs. Our own contributions are MIT-licensed under
+LICENSE; this does not replace the licenses of the upstream material. No
+license for unrelated repository material is chosen by this notice.
+
+If copying an adapted file on its own (notably TalBlockAdvice.lean), accompany
+it with the corresponding complete license text and copyright/permission
+notice, rather than keeping only a link to a license elsewhere. If packaging
+only compiled files, include the relevant license and attribution texts in
+the accompanying distribution. Check any additional bundled dependencies,
+assets, or toolchain files separately before redistribution.
+
+Run: ruby scripts/check_third_party.rb
+Optional: use --upstream NAME=PATH for each pinned upstream Git checkout
+to compare original source hashes, notices, and license bytes directly.
+
+When adding copied or adapted material, extend the inventory and this notice,
+retain the original author's notices and full license, record the exact
+source revision and modifications, and check for upstream NOTICE files. Do
+not copy material whose permission or provenance has not been established.

@@ -1,0 +1,29 @@
+name = "multiplication_correlation"
+version = "0.1.0"
+defaultTargets = ["ElementaryMultiplication"]
+
+[[lean_lib]]
+name = "ElementaryMultiplication"
+roots = ["ElementaryMultiplication", "TransformerAC0", "Cslib", "Complexitylib", "Tal", "TalRestriction", "TalRandomRestriction", "TalSecondMoment", "TalNumerics", "TalOptimizedNumerics", "TalDecisionTree", "TalSwitching", "TalCommonTree", "TalBlockAdvice", "TalBlockPacking", "TalFamilyAdvice", "TalCanonicalCompletion", "TalTracePrefix", "TalFamilyWitness", "TalRecoverableWitness", "TalFamilyEncoder", "TalPhaseSplit", "TalFutureReplay", "TalFamilyDecoder", "TalFamilyFrames", "TalFamilyTranscript", "TalFamilyDecoding", "TalMultiSwitching", "Footprint",
+  "TalCommonTreeFourier", "TalTreeNormalForm", "TalSignedCircuit", "TalBroadNumerics", "TalSwitchingNumerics", "TalMixedSwitching", "TalShallowCircuit", "TalGateNetwork", "TalSharedCircuit", "TalNetworkCut", "TalNetworkFourier", "TalComplete", "TalConsequences", "HiddenReasoningTax", "Encryption", "ObliviousSimulation", "OrderedAddition",
+  "IntegerMultBounds", "MultiplicationMachineBridge", "SchonhageInitializer",
+  "VerifiedMultiplicationSource", "VerifiedPlainMultiplication", "VerifiedMultiplication",
+  "Autoregressive", "TaskFootprint", "EntropyCoding", "LookupTransformer",
+  "TaskReductions", "PositiveAdditionFootprint", "LocalUnrecoverability", "FourierCorrelation",
+  "MultiplicationFootprint", "PublicReasoningTax", "FiniteInformation", "ConcreteReasoning",
+  "UniformTaskFootprint", "PolynomialEncryption", "CanonicalArithmetic", "SimulationSizeAudit",
+  "TerminatedAutoregressive", "TerminatedSymbolic", "ObliviousProgram", "ObliviousPhase", "MatrixReadout",
+  "TokenAutoregressive", "TokenSymbolic", "CausalSymbolicToken", "CausalSymbolicFootprint", "CausalBoundary", "ExactProtocolToken", "ExactFoldPrompt", "ExactFoldTrace", "ExactTasks", "ExactFoldTheorem", "ExactMultitapeOutput", "ExactNearLinear", "ExactNearLinearTrace", "ExactMultiplication", "ExactBinaryWord", "PlainBinaryWord", "PlainTasks", "PlainMultiplication", "SeededToken", "TapeRotation", "PhaseSemantics",
+  "ObliviousCopy", "RotationProgram", "HeadMarker", "CompressedTape", "PhaseStack", "LeafStep",
+  "EfficientPhase", "NumericalPrimitives", "NumericalAttention", "NumericalMLP", "CausalMatrix",
+  "CausalAutoregressive", "CausalMatrixCorrectness", "RoutedMatrix", "RoutedMatrixCorrectness",
+  "RoutedAutoregressive", "RoutedLocalMap", "RoutedSchedule", "LocalPRG", "EncryptedMatrix", "EncryptedObliviousMatrix",
+  "EncryptedEfficientMatrix", "EncryptedSerialization", "MultitapeTuring", "MultitapePhase", "TapeProgram", "MultitapeLeaf", "MultitapeBatches", "MultitapeEfficientPhase", "FastMultiplication",
+  "ObliviousMatrix", "EfficientMatrix", "MultitapeMatrix", "EncryptedMultitapeMatrix", "MultiplicationUpper",
+  "ScheduleMatrix", "ReadoutSchedule", "ScheduleRelabel", "ScheduleRecoding", "ExactEncryptedAlphabet", "ExactTaskAlphabet", "ExactFold", "FoldProgram", "ElementaryTaskUpper", "EncryptedTaskUpper", "FiniteProtocolPrivacy", "EncryptedFiniteReadout", "DelimitedWord", "EncryptedFold", "EncryptedMultitapeFiniteOutput",
+  "EncryptedReadout", "EncryptedMultitapeOutput", "PrivateOutput", "PrivateWordOutput", "MultitapeOutputCapacity", "PolynomialWordOutput", "NearLinearPrivateBit", "PrivateMultiplication", "ProtocolMatrix", "ProtocolEncryptedBinary", "ProtocolMultitapeMatrix", "ProtocolSerialization", "MultitapeOutputMatrix", "ProtocolToken", "CausalToken", "BinarySchedule", "BinaryMatrix", "EncryptedBinaryMatrix", "BinaryObliviousMatrix", "BinaryMultitapeMatrix", "SeedBudget", "LogSquaredSeedBudget", "PolylogSeedBudget", "PolylogSourceUpper", "PolylogPrivateBit", "PlainPolylogBit", "ExactPolylogBit", "ExactPolylogTrace", "MultitapeLiteralInitialization", "SchonhageRuntime", "PRGRestriction", "PRGReindex", "PrivatePolynomialTime", "Verification"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.19.0"

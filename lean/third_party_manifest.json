@@ -1,0 +1,1071 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-15",
+  "notice": "NOTICE",
+  "project_license": {
+    "path": "LICENSE",
+    "spdx": "MIT",
+    "copyright_notice": "Copyright (c) 2026 Michael Hahn and contributors",
+    "sha256": "1878b5d5388c0804ee48fafcfb713f2bddcf450cdddf7bdb9d4e65b59599f077",
+    "scope": "Original project code, scripts, documentation, additions, and modifications under lean/, to the extent that project contributors hold rights in them. Third-party materials retain their own licenses and notices; the MIT grant does not remove upstream requirements."
+  },
+  "scope": "Vendored and directly adapted Lean sources in this source distribution; external package metadata is separate from copied source.",
+  "audit_method": "Compared source notices, original-source SHA-256 hashes, license bytes, and absence of upstream NOTICE files directly against the pinned Git objects; no dependence on the current checkout branch.",
+  "components": [
+    {
+      "name": "complexitylib",
+      "repository": "https://github.com/SamuelSchlesinger/complexitylib",
+      "revision": "add0aca8ee0d71e68969f2cb45cf91554a50f787",
+      "local_directory": "Complexitylib",
+      "authors": [
+        "Samuel Schlesinger",
+        "complexitylib contributors"
+      ],
+      "modifications": "Lean/mathlib 4.19 compatibility port: module/public syntax, renamed APIs, coercions, tactic elaboration, and a private list-index helper. Original author notices retained.",
+      "upstream_notice_files": [],
+      "licenses": [
+        {
+          "path": "Complexitylib/LICENSE",
+          "upstream_path": "LICENSE",
+          "spdx": "Apache-2.0",
+          "sha256": "5969af59903baf143cdf101bac053f262c093847ab0efc43807ae81e19bdf190",
+          "copyright_notices": []
+        },
+        {
+          "path": "Complexitylib/Algebraic/LICENSE",
+          "upstream_path": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "sha256": "f4e009ce6de35b59b0f7117555a95c15e10ec6ed62d857f097acddc6ec9b74d3",
+          "copyright_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger"
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "Complexitylib/Algebraic/Circuit.lean",
+          "upstream_path": "Complexitylib/Algebraic/Circuit.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Circuit.lean",
+          "upstream_sha256": "dde2d7e0a0ea58fe2a8119ac077fb5f0b0f792926daafc19778f7c35830ab89d",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/Homomorphism.lean",
+          "upstream_path": "Complexitylib/Algebraic/Homomorphism.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Homomorphism.lean",
+          "upstream_sha256": "e550248c8233c7281f29e4112a0b4785e61e83dd0c103d4f7bfd49fb83605783",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/Interpretation.lean",
+          "upstream_path": "Complexitylib/Algebraic/Interpretation.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Interpretation.lean",
+          "upstream_sha256": "59c5f7716a920c259c9c02255053b5bdfb7b8746f8e57625ab614d3e23e9422c",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/CanonicalDecisionTree.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/CanonicalDecisionTree.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/CanonicalDecisionTree.lean",
+          "upstream_sha256": "15088d604ed3ab9d5f701380aca5a3ac7c0f4945a5f8b925a7c959f0137632ef",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/DecisionTree.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/DecisionTree.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/DecisionTree.lean",
+          "upstream_sha256": "dfc0baef8751069cdde469d8ce293fd3432013d167600f2b596e08c198098d80",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Duality.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Duality.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Duality.lean",
+          "upstream_sha256": "fdfb43d5c7921d214ab9c2b9e78a8fdd2664bd9cb888e1f7f1055dbda111cf10",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/NormalForm.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/NormalForm.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/NormalForm.lean",
+          "upstream_sha256": "64929fa9850d96314d4f0a990b8f7642f6db6c0db0c20f319f9729c1d7ece384",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/RandomRestriction.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/RandomRestriction.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/RandomRestriction.lean",
+          "upstream_sha256": "3260ddcf2cb3ab5488ced27fe3ca7438ee587d39631ba7212d40cfecb1486a90",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching.lean",
+          "upstream_sha256": "16e81eda3a33b9b5b6d839deee13d31a1453d5ce041f2ee7e0719b3650f73975",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/Canonical.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/Canonical.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/Canonical.lean",
+          "upstream_sha256": "d203d26617b4f2d20dfab6c49c7258941ae6fd2fbed9a018a348ef84d605b1df",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CanonicalEncoding.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CanonicalEncoding.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CanonicalEncoding.lean",
+          "upstream_sha256": "78926c643f304ffcfe2a2df7f97daf4d170e9f77a436244927244d29674b8ba9",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedAdvice.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedAdvice.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedAdvice.lean",
+          "upstream_sha256": "9faad8b32433769636f4327f9aeb6913f6aa773c92bba648e633dc023a95ed44",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonical.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonical.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonical.lean",
+          "upstream_sha256": "b11aff501355fe7f2ef88cb3441c539546a45fb764ad0964e41e5f8d5a6d90aa",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalEncoding.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalEncoding.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalEncoding.lean",
+          "upstream_sha256": "66b48201817ff34daf15a49adc62aa060823621763d194075f46cefda2fe8623",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalPacking.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalPacking.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalPacking.lean",
+          "upstream_sha256": "1c6bfaec266346ad699be963b23612c5d8ab1dff447df5041574269e4e7add26",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalTrace.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalTrace.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedCanonicalTrace.lean",
+          "upstream_sha256": "467f5985541d92e4e97ada8f9ac7d4c8ae2a8b37239a63cc02a1b95040e8f2a1",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/Encoding.lean",
+          "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/Encoding.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/Encoding.lean",
+          "upstream_sha256": "34b33976d39651643712bb11d460e1e7ea7d1d4f0178e8319758f9c8d58769c3",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/PartialAssignment.lean",
+          "upstream_path": "Complexitylib/Algebraic/PartialAssignment.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/PartialAssignment.lean",
+          "upstream_sha256": "af78fbcd8a479036a5788ccecff559aca674701eddf618d2bf91274150b3572e",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/Program.lean",
+          "upstream_path": "Complexitylib/Algebraic/Program.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Program.lean",
+          "upstream_sha256": "544fc1cea780d55e24781cc1b211ddb2aa8ab5b88d5d9a0c69e6f8ee25b34af3",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/Restriction.lean",
+          "upstream_path": "Complexitylib/Algebraic/Restriction.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Restriction.lean",
+          "upstream_sha256": "63ee4f6e250f991e2552c98479ca138363385e3d6ca9380aa9afabf02ee94b19",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/Semantics.lean",
+          "upstream_path": "Complexitylib/Algebraic/Semantics.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Semantics.lean",
+          "upstream_sha256": "8a541c65358910a0b4e86fe91267795c9d435efe2be1cdf8eb5142cbdb3c2701",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Algebraic/Signature.lean",
+          "upstream_path": "Complexitylib/Algebraic/Signature.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/Signature.lean",
+          "upstream_sha256": "f7b77def53b12227f1b4b9c1697e90f46bf3af637d07e5558981fb6065644043",
+          "license_file": "Complexitylib/Algebraic/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Complexitylib/Cslib/Circuit/Wire.lean",
+          "upstream_path": "Complexitylib/Cslib/Circuit/Wire.lean",
+          "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Cslib/Circuit/Wire.lean",
+          "upstream_sha256": "1b1ab7a30092e636b29bf5cedd6c3ad3d57ecd1f25135bae19285ec1dac15fc9",
+          "license_file": "Complexitylib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        }
+      ]
+    },
+    {
+      "name": "cslib",
+      "repository": "https://github.com/leanprover/cslib",
+      "revision": "311d27ad8458b61e9b7461fc83a480e4be97aef2",
+      "local_directory": "Cslib",
+      "authors": [
+        "Samuel Schlesinger",
+        "Jesse Alama",
+        "CSLib contributors"
+      ],
+      "modifications": "Lean/mathlib 4.19 compatibility port; Cslib/Init.lean replaces newer initialization imports while retaining Jesse Alama's original author notice.",
+      "upstream_notice_files": [],
+      "licenses": [
+        {
+          "path": "Cslib/LICENSE",
+          "upstream_path": "LICENSE",
+          "spdx": "Apache-2.0",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "copyright_notices": []
+        }
+      ],
+      "files": [
+        {
+          "path": "Cslib/Computability/Circuit/Basic.lean",
+          "upstream_path": "Cslib/Computability/Circuit/Basic.lean",
+          "upstream_url": "https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/Cslib/Computability/Circuit/Basic.lean",
+          "upstream_sha256": "8ac28f3c99a695651f39402e154ff6c8a33429a82d141bf61336213a3cc1ca6a",
+          "license_file": "Cslib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Cslib/Computability/Circuit/Homomorphism.lean",
+          "upstream_path": "Cslib/Computability/Circuit/Homomorphism.lean",
+          "upstream_url": "https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/Cslib/Computability/Circuit/Homomorphism.lean",
+          "upstream_sha256": "566142be2969e92d30eaccff72852e34ef385b8bdf972698975920d40edf4edd",
+          "license_file": "Cslib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Cslib/Computability/Circuit/Program.lean",
+          "upstream_path": "Cslib/Computability/Circuit/Program.lean",
+          "upstream_url": "https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/Cslib/Computability/Circuit/Program.lean",
+          "upstream_sha256": "a8dc2ecb51bd3eb939da09cf2edcda769cc2ce9371dae9439a94b77a06efeafc",
+          "license_file": "Cslib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Cslib/Computability/Circuit/Signature.lean",
+          "upstream_path": "Cslib/Computability/Circuit/Signature.lean",
+          "upstream_url": "https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/Cslib/Computability/Circuit/Signature.lean",
+          "upstream_sha256": "041d67e34ca6f9976b4588ad34810d790dc3afd39bfc67fce6c1bfef528d2148",
+          "license_file": "Cslib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Cslib/Computability/Circuit/Wire.lean",
+          "upstream_path": "Cslib/Computability/Circuit/Wire.lean",
+          "upstream_url": "https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/Cslib/Computability/Circuit/Wire.lean",
+          "upstream_sha256": "3cd6b0ab28852140673138c696b7f296c510c8bd5ad9557e5ed5232c63a370ab",
+          "license_file": "Cslib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2026 Samuel Schlesinger. All rights reserved.",
+            "Authors: Samuel Schlesinger"
+          ],
+          "modified": true
+        },
+        {
+          "path": "Cslib/Init.lean",
+          "upstream_path": "Cslib/Init.lean",
+          "upstream_url": "https://github.com/leanprover/cslib/blob/311d27ad8458b61e9b7461fc83a480e4be97aef2/Cslib/Init.lean",
+          "upstream_sha256": "e453b900baa1938e94b02c562254de2ab2240611e3f23410f8c35dde0f419b0b",
+          "license_file": "Cslib/LICENSE",
+          "spdx": "Apache-2.0",
+          "retained_notices": [
+            "Copyright (c) 2025 Jesse Alama. All rights reserved.",
+            "Authors: Jesse Alama"
+          ],
+          "modified": true
+        }
+      ]
+    },
+    {
+      "name": "integer-mult-bounds",
+      "repository": "https://github.com/platypii/integer-mult-bounds-lean",
+      "revision": "9b148a008183b1342e134af1270d3a7dafad4a9c",
+      "local_directory": "IntegerMultBounds",
+      "authors": [
+        "Kenny Daniel",
+        "integer-mult-bounds-lean contributors"
+      ],
+      "modifications": "Classical multiplier dependency subtree ported to Lean/mathlib 4.19: API, type/coercion, and tactic compatibility edits. No stronger unfinished upstream end-to-end claim is imported.",
+      "upstream_notice_files": [],
+      "licenses": [
+        {
+          "path": "IntegerMultBounds/LICENSE",
+          "upstream_path": "LICENSE",
+          "spdx": "MIT",
+          "sha256": "d42315aa7b17b89e4f9294ceebd610d6b5613be168270475fac2fb261f158a9c",
+          "copyright_notices": [
+            "Copyright (c) 2026 Kenny Daniel"
+          ]
+        }
+      ],
+      "files": [
+        {
+          "path": "IntegerMultBounds/Machine.lean",
+          "upstream_path": "IntegerMultBounds/Machine.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine.lean",
+          "upstream_sha256": "af410cf9353c96cc22a8f8deafbcaea5f2b278a1e7d23456a0da6447c8756465",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Branch.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Branch.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Branch.lean",
+          "upstream_sha256": "0ee3a060c27d9f8aa9f960343319141741a199f49b72fb4ca74edc6785f6854f",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Composition.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Composition.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Composition.lean",
+          "upstream_sha256": "fdff07689bb172e5487eaa2dfcaabffb6d46b8fb91118019b45567f3221e7a79",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Execution.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Execution.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Execution.lean",
+          "upstream_sha256": "7a67636dd094fad1d6a8e23113a15d2b4394492d5246472163347443c734b29f",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Frame.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Frame.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Frame.lean",
+          "upstream_sha256": "ba7fe449b2dcfa9fe358e20e048746c63736ab3ef03136a3982ab474dd258335",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Hoare.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Hoare.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Hoare.lean",
+          "upstream_sha256": "5511a9877f9e69e1580478ff3bdc003e51b0b60b5f1c270cbffdb03e3775b1a0",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/InjectivePlacement.lean",
+          "upstream_path": "IntegerMultBounds/Machine/InjectivePlacement.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/InjectivePlacement.lean",
+          "upstream_sha256": "0ba05370f6a896798d036f70abe6bc0d9e1b080a7b901487369f192d6edac5b8",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Loop.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Loop.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Loop.lean",
+          "upstream_sha256": "4cca6ebcb313c1dfecafeaeaeff81f2c3ba05c45bd77f52ee7653ef2802a7458",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/Placement.lean",
+          "upstream_path": "IntegerMultBounds/Machine/Placement.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/Placement.lean",
+          "upstream_sha256": "39e4d781dfe2896443f49bbe2649ffcb52820173863ce7049f801c204046e484",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/PlacementBank.lean",
+          "upstream_path": "IntegerMultBounds/Machine/PlacementBank.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/PlacementBank.lean",
+          "upstream_sha256": "a523c78a4b6b29886579daa407dae6044f0f5fac76131504421681bc093f1e84",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Machine/WordTape.lean",
+          "upstream_path": "IntegerMultBounds/Machine/WordTape.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Machine/WordTape.lean",
+          "upstream_sha256": "c756cb8d11dbd3acb1a133256dd202ea02c8a71beebc498bc6308f62bd5b1bdb",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Alu.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Alu.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Alu.lean",
+          "upstream_sha256": "30772cb06b6e052d98f9032ee8aa06a7a62d2f7e431f1f2a6f4801ca7e2f855c",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/BaseCase.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/BaseCase.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/BaseCase.lean",
+          "upstream_sha256": "f0ec3784c2e139c8bb6954b631a2b09e97c951f8afa46809b8d330db77d11d07",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Batch.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Batch.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Batch.lean",
+          "upstream_sha256": "914fe84c69b5bc31e986ca151f465ea444e1ca25458523b5757275820613a46f",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/BatchMath.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/BatchMath.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/BatchMath.lean",
+          "upstream_sha256": "4109dfeda3b1368f6daf2eadb48a9a99ddb31d34bf729d2236d11dfa631fa205",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Butterfly.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Butterfly.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Butterfly.lean",
+          "upstream_sha256": "a9180fe35b557c1c29eeea6b9519c2d6b4f8f62a50840da446133d3951581e57",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Cmd.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Cmd.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Cmd.lean",
+          "upstream_sha256": "788407dfae434ec19ddb7f6fd492d4b307556f69fc6c9d098d56288e1022f9ee",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Driver.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Driver.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Driver.lean",
+          "upstream_sha256": "59df2b195c59d3a731df9dd63bef576f11ac2a0ec97c57710d7d400b6f21ceb2",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/DriverUp.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/DriverUp.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/DriverUp.lean",
+          "upstream_sha256": "b87691c95e3c383f4c2e027de59010847eea6e2b0e48a074d1e1d883a302f6b7",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/FMachine.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/FMachine.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/FMachine.lean",
+          "upstream_sha256": "f20b5dbe7aa39427eb3f920cbb25e173c7c3757127086118c18e7f3ba3c9b6e5",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/InvLayers.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/InvLayers.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/InvLayers.lean",
+          "upstream_sha256": "225a787dadee8e4d1079f3dd5daed7c373dccd13b2c25b0fc7c650cddf8ae30b",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Iter.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Iter.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Iter.lean",
+          "upstream_sha256": "ad48021e4cf2066e98a326ddc291b89974bbac387ce62a273ea561924b9848f5",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/IterCorrect.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/IterCorrect.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/IterCorrect.lean",
+          "upstream_sha256": "7c30b50ea412a488f44381b9ae56dc4ec49a2175e2ca1e61103e61df1b52bd5b",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Layers.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Layers.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Layers.lean",
+          "upstream_sha256": "bc6c517e3c52c477295500f144780dd624448ba7874fc8c52da1e3b2cdbb44a3",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Level.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Level.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Level.lean",
+          "upstream_sha256": "e5e5aae76e0c86c26b20bf718c82e8d50c89bd3c0ca44a8a160de6a86f9f6549",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/LevelDown.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/LevelDown.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/LevelDown.lean",
+          "upstream_sha256": "75f54547aaba8518dc9c08049712e318db62cac5c994bc8cc0586f4560681d68",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/LevelMk.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/LevelMk.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/LevelMk.lean",
+          "upstream_sha256": "642f58e0788ac24acacb28fc8e2b82e50443883a6f0e0a37781e3bc87c14bfee",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/LevelParams.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/LevelParams.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/LevelParams.lean",
+          "upstream_sha256": "0725a69509f86005f2a407d07e7f79f0bc93f2d354e70eaff103b643f5067e4b",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/LevelTape.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/LevelTape.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/LevelTape.lean",
+          "upstream_sha256": "ced9ed40c268025566ce2179580b757246ce96b11afdd7739f261007600da319",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/LevelUp.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/LevelUp.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/LevelUp.lean",
+          "upstream_sha256": "87fc73d9149d08a24d96e64f9928ba6c99a3cfa4db06cd07ede00f937ff8583b",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Lists.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Lists.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Lists.lean",
+          "upstream_sha256": "0777f2458ec0cb08f5c19ad15993dd6902eb564b247a1f61bd8b1b9617b2e9c1",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Moves.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Moves.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Moves.lean",
+          "upstream_sha256": "f3d1aa53b179b3123c5c589d4365bf5019e7291d7886863b228c7c987455afda",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Ops.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Ops.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Ops.lean",
+          "upstream_sha256": "b21fdcc0ccf422ee923ac2e6f15b7f69d9a85ee60fbeb30b666f6ff9d344a534",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Params.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Params.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Params.lean",
+          "upstream_sha256": "a5937ab7a208f10b5bcef01e4184811a0db0591d17610055189faed2440e14ea",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Recomb.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Recomb.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Recomb.lean",
+          "upstream_sha256": "779b503a14f99c89058feec166ea1f7c6d493e924fd927f9bc113f95cb116dc7",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Recursive.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Recursive.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Recursive.lean",
+          "upstream_sha256": "9cc0a89e55fc40e07fec98831db0fdd304444ff8483b280cbca92d94f9f456fd",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Rules.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Rules.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Rules.lean",
+          "upstream_sha256": "8c13fb097b52ff9f328547aeab8acc967960f8536cacfdbcc6ff043078716c62",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/SSClean.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/SSClean.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/SSClean.lean",
+          "upstream_sha256": "fa87047b519b5af292c05cf02c9e465d00554084fe71b6da3b0174b0ff064d1a",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/SSCost.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/SSCost.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/SSCost.lean",
+          "upstream_sha256": "fca4c239dded801d6de74377d7a420d8f528775750a82e1d4c4504281db04344",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/SSMain.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/SSMain.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/SSMain.lean",
+          "upstream_sha256": "eecd719a2f4e6ac28d27a8385583cf9fa84af485a7417d9df3a12001084dee0e",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/SSMath.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/SSMath.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/SSMath.lean",
+          "upstream_sha256": "317cacac25ff9817cd4b45d5a8eea22b508ab4b61b1b71f40dfcabe0422598d3",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/SSProgram.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/SSProgram.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/SSProgram.lean",
+          "upstream_sha256": "5b7ee906d6bb804569dd84064939cf241f930dbf6a697f0a34b9ea69546b6a34",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Schedule.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Schedule.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Schedule.lean",
+          "upstream_sha256": "bf3fe6ed776176ab995294639d871db08899a54907f9b0cbaf6b9bcab0a2f0eb",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Split.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Split.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Split.lean",
+          "upstream_sha256": "de3284e1ea01ce5eeb869523691c3a2d3834e37b47b4aa2b45ac013a23ddf64a",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Stream.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Stream.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Stream.lean",
+          "upstream_sha256": "70addfd77a3ad58899d53d1bd0554a0a5beb76641f4f7a5dfd5fd098e6be3295",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/StreamPrim.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/StreamPrim.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/StreamPrim.lean",
+          "upstream_sha256": "0e0e68412a9edd425563db2a4ee21e47c1ca30c35410aefc45fb17a71ee5a1c5",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Transform.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Transform.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Transform.lean",
+          "upstream_sha256": "df04c01880790057373bea3c4863d28fe735b8484eb95b103fc4e1667ef258f5",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Words.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Words.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Words.lean",
+          "upstream_sha256": "c7ca14c0f1d0da9f5391c628d841c640bad541ca2d02a62e5d9331b0af277932",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        },
+        {
+          "path": "IntegerMultBounds/Schoenhage/Wp.lean",
+          "upstream_path": "IntegerMultBounds/Schoenhage/Wp.lean",
+          "upstream_url": "https://github.com/platypii/integer-mult-bounds-lean/blob/9b148a008183b1342e134af1270d3a7dafad4a9c/IntegerMultBounds/Schoenhage/Wp.lean",
+          "upstream_sha256": "a2b6a499aa5717956788aa69237808aa8992dd7b0c39786ffaea8d681b597e58",
+          "license_file": "IntegerMultBounds/LICENSE",
+          "spdx": "MIT",
+          "retained_notices": [],
+          "modified": true
+        }
+      ]
+    }
+  ],
+  "adaptations": [
+    {
+      "path": "TalBlockAdvice.lean",
+      "component": "complexitylib",
+      "upstream_path": "Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedAdvice.lean",
+      "upstream_url": "https://github.com/SamuelSchlesinger/complexitylib/blob/add0aca8ee0d71e68969f2cb45cf91554a50f787/Complexitylib/Algebraic/LowerBound/AC0/Switching/CombinedAdvice.lean",
+      "upstream_sha256": "9faad8b32433769636f4327f9aeb6913f6aa773c92bba648e633dc023a95ed44",
+      "license_file": "Complexitylib/Algebraic/LICENSE",
+      "spdx": "MIT",
+      "retained_notices": [
+        "Copyright (c) 2026 Samuel Schlesinger. All rights reserved."
+      ],
+      "modifications": "Adapted binomial/exponential counting helper; arbitrary final block differences and the (3t)^D family-advice bound.",
+      "modified": true
+    }
+  ],
+  "local_import_wrappers": [
+    "Complexitylib.lean",
+    "Cslib.lean",
+    "IntegerMultBounds.lean"
+  ],
+  "external_dependencies": [
+    {
+      "name": "mathlib",
+      "repository": "https://github.com/leanprover-community/mathlib4.git",
+      "revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "plausible",
+      "repository": "https://github.com/leanprover-community/plausible",
+      "revision": "77e08eddc486491d7b9e470926b3dbe50319451a",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "LeanSearchClient",
+      "repository": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "25078369972d295301f5a1e53c3e5850cf6d9d4c",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "importGraph",
+      "repository": "https://github.com/leanprover-community/import-graph",
+      "revision": "e6a9f0f5ee3ccf7443a0070f92b62f8db12ae82b",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "proofwidgets",
+      "repository": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "c4919189477c3221e6a204008998b0d724f49904",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "aesop",
+      "repository": "https://github.com/leanprover-community/aesop",
+      "revision": "5d50b08dedd7d69b3d9b3176e0d58a23af228884",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "Qq",
+      "repository": "https://github.com/leanprover-community/quote4",
+      "revision": "fa4f7f15d97591a9cf3aa7724ba371c7fc6dda02",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "batteries",
+      "repository": "https://github.com/leanprover-community/batteries",
+      "revision": "f5d04a9c4973d401c8c92500711518f7c656f034",
+      "root_license": "Apache-2.0",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_vendored_in_repository": false
+    },
+    {
+      "name": "Cli",
+      "repository": "https://github.com/leanprover/lean4-cli",
+      "revision": "02dbd02bc00ec4916e99b04b2245b30200e200d0",
+      "root_license": "MIT",
+      "license_path_in_package": "LICENSE",
+      "root_license_sha256": "f7e95706807e931782b6efd9a9d2789508a52423ad67b56ee7e5e324362d4aac",
+      "source_vendored_in_repository": false
+    }
+  ],
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "redistribution": "Retain NOTICE, full licenses, original notices and modification notices. Audit separately any bundled dependency caches, nested assets, binaries or toolchain distributions."
+}
+
