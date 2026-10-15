@@ -1,12 +1,19 @@
-# Lean verification of the theoretical appendix
+# Lean verification of theoretical results
 
-This directory contains the Lean verification for
+This directory contains Lean verification for
 [Hidden Reasoning Must Leak, but Need Not Be Readable: Fundamental Opportunities and Limits for Chain-of-Thought Monitoring](https://arxiv.org/abs/2609.37312)
 (arXiv:2609.37312).
 
 The project-specific formalization, adaptations, and integration were produced
 by GPT-6.1-Sol with input from Michael Hahn. This attribution does not claim
 authorship of the third-party proofs and infrastructure credited below.
+
+**Important Note:**
+We do not claim any intellectual ownership at all of the formalization; the entire codebase, including this README file, was AI-generated on the basis of the paper, with only limited human input.
+The purpose of this formalization, and of providing it publicly in this GitHub repository, is simply in hope of making it easier for others to build on the formal results shown in the paper.
+
+**Everything below this line is AI-generated.**
+
 
 ## License
 
